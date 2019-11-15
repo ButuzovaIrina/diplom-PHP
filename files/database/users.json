@@ -1,0 +1,152 @@
+{
+    "dataTitle": {
+        "last_guid": 13
+    },
+    "dataArray": {
+        "o1": {
+            "name": null,
+            "password": "123",
+            "email": "12321.mail.com",
+            "rate": null,
+            "login": "ddddgxfgd",
+            "lastName": "111",
+            "firstName": "111",
+            "middleName": "111111",
+            "phone": "1111111",
+            "code": "",
+            "status": "manager"
+        },
+        "o2": {
+            "login": "333",
+            "password": "333",
+            "lastName": "333333",
+            "firstName": "3333",
+            "middleName": "33333",
+            "email": "33333@fhf.ru",
+            "phone": "22222222222",
+            "status": "manager",
+            "code": "aaa"
+        },
+        "o3": {
+            "login": "",
+            "password": "",
+            "lastName": "",
+            "firstName": "",
+            "middleName": "",
+            "email": "",
+            "phone": "",
+            "status": "manager",
+            "code": ""
+        },
+        "o4": {
+            "login": "12345",
+            "password": "12345",
+            "lastName": "12345",
+            "firstName": "12345",
+            "middleName": "12345",
+            "email": "33333@fhf.ru",
+            "phone": "1111111111111111",
+            "status": "manager",
+            "code": "aaa"
+        },
+        "o5": {
+            "login": "12345",
+            "password": "12345",
+            "lastName": "12345",
+            "firstName": "12345",
+            "middleName": "12345",
+            "email": "33333@fhf.ru",
+            "phone": "1111111111111111",
+            "status": "manager",
+            "code": "aaa"
+        },
+        "o6": {
+            "login": "12345",
+            "password": "12345",
+            "lastName": "12345",
+            "firstName": "12345",
+            "middleName": "12345",
+            "email": "33333@fhf.ru",
+            "phone": "1111111111111111",
+            "status": "manager",
+            "code": "aaa"
+        },
+        "o7": {
+            "login": "222",
+            "password": "222",
+            "lastName": "222",
+            "firstName": "222",
+            "middleName": "222",
+            "email": "222@ggg.ru",
+            "phone": "22222222222",
+            "status": "translator",
+            "code": "aaa"
+        },
+        "o8": {
+            "login": "222",
+            "password": "222",
+            "lastName": "222",
+            "firstName": "222",
+            "middleName": "222",
+            "email": "222@ggg.ru",
+            "phone": "22222222222",
+            "status": "translator",
+            "code": "aaa"
+        },
+        "o9": {
+            "login": "222",
+            "password": "",
+            "lastName": "222",
+            "firstName": "222",
+            "middleName": "222",
+            "email": "222@ggg.ru",
+            "phone": "22222222222",
+            "status": "translator",
+            "code": ""
+        },
+        "o10": {
+            "login": "222",
+            "password": "",
+            "lastName": "222",
+            "firstName": "222",
+            "middleName": "222",
+            "email": "222@ggg.ru",
+            "phone": "22222222222",
+            "status": "translator",
+            "code": ""
+        },
+        "o11": {
+            "login": "222",
+            "password": "",
+            "lastName": "222",
+            "firstName": "222",
+            "middleName": "222",
+            "email": "222@ggg.ru",
+            "phone": "22222222222",
+            "status": "translator",
+            "code": ""
+        },
+        "o12": {
+            "login": "222",
+            "password": "",
+            "lastName": "222",
+            "firstName": "222",
+            "middleName": "222",
+            "email": "222@ggg.ru",
+            "phone": "22222222222",
+            "status": "translator",
+            "code": ""
+        },
+        "o13": {
+            "login": "",
+            "password": "",
+            "lastName": "",
+            "firstName": "",
+            "middleName": "",
+            "email": "",
+            "phone": "",
+            "status": "manager",
+            "code": ""
+        }
+    }
+}

@@ -1,0 +1,86 @@
+body {
+  background-color: #eef2f6;
+  margin: 0px;
+}
+nav {
+  display: block;
+}
+.main-header, .logo {
+  display: block;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.logo {
+  background-color: #447d9e;
+  text-decoration: none;
+  color: #ffffff;
+  width: 100%;
+  float: none;  
+}
+
+.navbar {
+  background-color:#99c5df;
+  width: 100%;
+  float: none;
+}
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:#6491ad;
+  width: 30%;
+  margin-top: 50px;
+  height: 100%;
+  float: left;
+}
+.menu {
+list-style-type: none;
+padding: 0px;
+}
+
+.menu-header {
+  background-color: #447d9e;
+  color: #ffffff;
+  padding: 20px 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+ 
+.menu-item {
+   padding: 20px 20px;
+}
+/*для форм авторизации и регистрации*/
+form {
+    color: #447d9e;
+}
+.form-header {
+  text-align: center;
+}
+.form-container {
+  display: block;
+  
+}
+label, button {
+  display: block;
+  margin: 10px 30px;
+}
+
+button {
+  padding: 8px 18px; 
+  margin: 10px auto;
+  background-color: #447d9e;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 22px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
