@@ -2,7 +2,7 @@
 
 class Config extends Singleton
 {
-    const DATABASE_PATH = __DIR__ . '/../files/database/';
+    const DATABASE_PATH = __DIR__ . '/../database/';
 }
 
 ?>

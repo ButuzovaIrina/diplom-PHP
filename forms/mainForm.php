@@ -1,4 +1,7 @@
 <?php
+include ("../autoload.php");
+include ("../config/SystemConfig.php");
+
 
 ?>
 <!DOCTYPE html>
@@ -6,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Информационная система «Бюро переводов»</title>
-    <link rel="stylesheet" type="text/css" href="./CSS/style.css"> 
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css"> 
  
 </head>
 
@@ -17,6 +20,7 @@
         </a>   
     </div>  
     <section class="sidebar">
+    <span> </span>
     </section>
     </div>
 </div>

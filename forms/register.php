@@ -26,13 +26,6 @@ if (strlen($_POST["middleName"])  === 0) {
     $messege =  $messege . ("Поле 'Отчество' не может быть пустым!   <br>");
 }
 
-$trimmed = trim($_POST["code"]);
-if (strlen($_POST["code"]) === 0) {
-    $messege =  $messege . ("Поле 'Кодовое слово' не может быть пустым!   <br>");
-} elseif (strtolower($trimmed) !== $codeMatch) {
-    $messege = $messege . "Неверное кодовое слово!";
-}
-
 if ($messege === ""){
    $messege = "Регистрация прошла успешно!";
 } 
@@ -82,13 +75,8 @@ if ($messege === ""){
       <span>Телефон:</span><input type="text" name="phone" placeholder="Телефон">  
     </label>
     <label>
-      <span>Кодовое слово:</span> 
-      <input type="password" name="code" placeholder="Кодовое слово aaa" required>
-    </label>
-    <label>
       <input type="radio" name="status" value="manager" checked>
-      <span>Менеджер</span>
-    
+      <span>Менеджер</span>    
     </label>
     <label>
         <input type="radio" name="status" value="translator">

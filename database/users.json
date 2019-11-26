@@ -1,0 +1,95 @@
+{
+    "dataTitle": {
+        "last_guid": 9
+    },
+    "dataArray": {
+        "o1": {
+            "login": "",
+            "password": "",
+            "lastName": "",
+            "firstName": "",
+            "middleName": "",
+            "email": "",
+            "phone": "",
+            "status": "manager",
+            "code": ""
+        },
+        "o3": {
+            "login": "111",
+            "password": "111",
+            "lastName": "111",
+            "firstName": "111",
+            "middleName": "111111",
+            "email": "12321.mail.com",
+            "phone": "12121212",
+            "status": "manager",
+            "code": "aaa"
+        },
+        "o4": {
+            "login": "222",
+            "password": "222",
+            "lastName": "222",
+            "firstName": "222",
+            "middleName": "222",
+            "email": "222@ggg.ru",
+            "phone": "22222222222",
+            "status": "translator",
+            "code": "aaa"
+        },
+        "o5": {
+            "login": "333",
+            "password": "333",
+            "lastName": "333333",
+            "firstName": "3333",
+            "middleName": "33",
+            "email": "33333@fhf.ru",
+            "phone": "3333",
+            "status": "translator",
+            "code": "aaa"
+        },
+        "o6": {
+            "login": "333",
+            "password": "3333",
+            "lastName": "333333",
+            "firstName": "3333",
+            "middleName": "33",
+            "email": "33333@fhf.ru",
+            "phone": "3333",
+            "status": "translator",
+            "code": "aaa"
+        },
+        "o7": {
+            "login": "333",
+            "password": "",
+            "lastName": "333333",
+            "firstName": "3333",
+            "middleName": "33",
+            "email": "33333@fhf.ru",
+            "phone": "3333",
+            "status": "translator",
+            "code": ""
+        },
+        "o8": {
+            "login": "444",
+            "password": "444",
+            "lastName": "444",
+            "firstName": "444",
+            "middleName": "444",
+            "email": "444",
+            "phone": "444",
+            "status": "manager",
+            "code": "444"
+        },
+        "o9": {
+            "login": "12345",
+            "password": "1234",
+            "lastName": "12345",
+            "firstName": "12345",
+            "middleName": "12345",
+            "email": "12321.mail.com",
+            "phone": "11111111",
+            "status": "translator",
+            "code": "aaa"
+        }
+    }
+}

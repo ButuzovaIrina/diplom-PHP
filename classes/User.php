@@ -14,9 +14,5 @@ class User extends DataRecordModel
     {
         $this->commit();
     }
-    public function showUserForm()
-    {
-        
-    }
    
 }
