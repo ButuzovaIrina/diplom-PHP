@@ -14,10 +14,9 @@ $newUser->status = $_POST["status"];
 
 $newUser->addUserFromForm();
 session_start();
-        $_SESSION["login"] = $newUser->login;
-        $_SESSION["name"] = $newUser->firstName;
-        $_SESSION["status"] = $newUser->status;
+    $_SESSION["login"] = $newUser->login;
+    $_SESSION["name"] = $newUser->firstName;
+    $_SESSION["status"] = $newUser->status;
 
 header("HTTP/1.1 200 OK");
 header("Location: ../forms/mainForm.php");
-?>

@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 
 include "autoload.php";
 include "config/SystemConfig.php";
-
+$messege = null;
 ?>
 
 <!DOCTYPE html>
@@ -29,17 +29,17 @@ include "config/SystemConfig.php";
             Авторизация
         </li>
         <li class="menu-item menu-item_login">
-            <a href="/forms/login.php">
+            <a class="sidebar-action" href="/forms/login.php">
                 <span>Вход</span>
             </a>
         </li>
         <li class="menu-item menu-item_register">
-            <a href="/forms/register.php">
+            <a class="sidebar-action" href="/forms/register.php">
                 <span>Регистрация</span>
             </a>
         </li>
         <li class="menu-item menu-item_logout">
-            <a href="#">
+            <a class="sidebar-action" href="#">
                 <span>Выйти</span>
             </a>
         </li>

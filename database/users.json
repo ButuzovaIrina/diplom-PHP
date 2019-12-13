@@ -1,57 +1,47 @@
 {
     "dataTitle": {
-        "last_guid": 5
+        "last_guid": 4
     },
     "dataArray": {
         "o1": {
-            "login": "111",
-            "password": "111",
-            "lastName": "1111",
-            "firstName": "1111",
-            "middleName": "1111111",
-            "email": "12321.mail.com",
-            "phone": "1111111111111",
+            "login": "12345",
+            "password": "12345",
+            "lastName": "\u0418\u0432\u0430\u043d\u043e\u0432 ",
+            "firstName": "\u0418\u0432\u0430\u043d",
+            "middleName": "\u0418\u0432\u0430\u043d\u043e\u0432\u0438\u0447",
+            "email": "12345.mail.com",
+            "phone": "123456789",
             "status": "manager"
         },
         "o2": {
-            "login": "12345",
-            "password": "12345",
-            "lastName": "12345",
-            "firstName": "12345",
-            "middleName": "12345",
-            "email": "12345.mail.com",
-            "phone": "1111111111111",
+            "login": "54321",
+            "password": "54321",
+            "lastName": "\u041f\u0435\u0442\u0440\u043e\u0432\u0430",
+            "firstName": "\u0414\u0430\u0440\u044c\u044f",
+            "middleName": "\u041f\u0435\u0442\u0440\u043e\u0432\u043d\u0430",
+            "email": "12321.mail.com",
+            "phone": "987654321",
             "status": "translator"
         },
         "o3": {
-            "login": "222",
-            "password": "222",
-            "lastName": "222",
-            "firstName": "22222222222",
-            "middleName": "222",
-            "email": "222@ggg.ru",
-            "phone": "2222222222222222222",
+            "login": "11111",
+            "password": "11111",
+            "lastName": "\u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432",
+            "firstName": "\u041d\u0438\u043a\u043e\u043b\u0430\u0439",
+            "middleName": "\u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u0438\u0447",
+            "email": "11111.mail.com",
+            "phone": "111111",
             "status": "translator"
         },
         "o4": {
-            "login": "333",
-            "password": "333",
-            "lastName": "333333",
-            "firstName": "3333",
-            "middleName": "33",
-            "email": "33333@fhf.ru",
-            "phone": "33333333333",
-            "status": "manager"
-        },
-        "o5": {
-            "login": "333",
-            "password": "",
-            "lastName": "333333",
-            "firstName": "3333",
-            "middleName": "33",
-            "email": "33333@fhf.ru",
-            "phone": "33333333333",
-            "status": "manager"
+            "login": "22222",
+            "password": "22222",
+            "lastName": "\u041f\u0430\u0432\u043b\u043e\u0432",
+            "firstName": "\u041f\u0435\u0442\u0440",
+            "middleName": "\u041f\u0435\u0442\u0440\u043e\u0432\u0438\u0447",
+            "email": "222@ggg.ru",
+            "phone": "2222222222222",
+            "status": "translator"
         }
     }
 }

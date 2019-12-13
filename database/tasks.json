@@ -1,0 +1,112 @@
+{
+    "dataTitle": {
+        "last_guid": 9
+    },
+    "dataArray": {
+        "o1": {
+            "status": "new",
+            "customer": "0",
+            "languageOrigin": "rus",
+            "languageToDo": [
+                [
+                    "eng",
+                    "jpn",
+                    "fra",
+                    "itl"
+                ]
+            ],
+            "userFile": "BHJS 2-1-Document_Object_Model.pdf",
+            "taskName": "dsdasd",
+            "deadline": "2019-12-23"
+        },
+        "o2": {
+            "status": "new",
+            "customer": "1",
+            "languageOrigin": "eng",
+            "languageToDo": [
+                "rus",
+                "fra",
+                "itl"
+            ],
+            "userFile": "BHJS 2-1-Document_Object_Model.pdf",
+            "taskName": "ssssssssssssss",
+            "deadline": "2019-12-24"
+        },
+        "o3": {
+            "status": "new",
+            "customer": "0",
+            "languageOrigin": "rus",
+            "languageToDo": [
+                "jpn",
+                "dec"
+            ],
+            "userFile": "ghost.doc",
+            "taskName": "\u043f\u0440\u0438\u0432\u0435\u0434\u0435\u043d\u0438\u0435",
+            "deadline": "2020-01-01"
+        },
+        "o4": {
+            "status": "new",
+            "customer": "0",
+            "languageOrigin": "eng",
+            "languageToDo": [
+                "jpn"
+            ],
+            "userFile": "ghost.doc",
+            "taskName": "\u043f\u0440\u0438\u0432\u0435\u0434\u0435\u043d\u0438\u0435",
+            "deadline": "2020-01-02"
+        },
+        "o5": {
+            "status": "new",
+            "customer": "0",
+            "languageOrigin": "eng",
+            "languageToDo": [
+                "rus"
+            ],
+            "userFile": "ghost.doc",
+            "taskName": "\u043f\u0440\u0438\u0432\u0435\u0434\u0435\u043d\u0438\u0435",
+            "deadline": "2020-01-02"
+        },
+        "o6": {
+            "status": "new",
+            "customer": " ",
+            "languageOrigin": "rus",
+            "languageToDo": [
+                "jpn"
+            ],
+            "userFile": "ghost.doc",
+            "taskName": "",
+            "deadline": "2020-01-02"
+        },
+        "o7": {
+            "status": "new",
+            "customer": " ",
+            "languageOrigin": " ",
+            "languageToDo": null,
+            "userFile": "ghost.doc",
+            "taskName": "",
+            "deadline": "2020-01-01"
+        },
+        "o8": {
+            "status": "new",
+            "customer": "0",
+            "languageOrigin": "eng",
+            "languageToDo": [
+                "jpn"
+            ],
+            "userFile": "ghost.doc",
+            "taskName": "",
+            "deadline": "2019-12-26"
+        },
+        "o9": {
+            "status": "new",
+            "customer": "0",
+            "languageOrigin": "rus",
+            "languageToDo": [
+                "rus"
+            ],
+            "userFile": "ghost.doc",
+            "taskName": "",
+            "deadline": "2019-12-18"
+        }
+    }
+}

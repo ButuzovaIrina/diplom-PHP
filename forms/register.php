@@ -80,7 +80,7 @@ if ($messege === ""){
     </label>
     <label>
         <input type="radio" name="status" value="translator">
-        <span>Переводчик:</span>
+        <span>Переводчик</span>
     </label>
     <button type="submit">Зарегистрироваться</button>
   </div>

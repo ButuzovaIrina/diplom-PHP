@@ -50,7 +50,7 @@ padding: 0px;
   font-weight: 500;
   font-size: 20px;
 }
-a {
+.sidebar-action {
   text-decoration: none;
   color: #ffffff;
 }
@@ -74,9 +74,9 @@ label, button {
   margin: 10px 30px;
 }
 
-button {
+button, .new-task-btn {
   padding: 8px 18px; 
-  margin: 10px auto;
+  margin: 10px 20px;
   background-color: #447d9e;
   color: #ffffff;
   text-decoration: none;
@@ -84,14 +84,36 @@ button {
   box-sizing: border-box;
   transition: 0.3s;
 }
+/*основная форма*/
 .content-wrapper {
- 
+  margin-left: 30%;
 }
 
 .content {
   display: block;
- 
+  padding: 20px;
+  margin: 30px;
   background-color: #ffffff;
-  width: 50px;
-  height: 50px;
+  width: auto;
+  height: auto;
+}
+/* новая задача*/
+.back {  
+  padding: 8px 18px; 
+  margin: 0px 20px 30px 20px;
+  background-color: #99c5df;
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 22px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.back.task {
+  float: right;
+}
+.comment {
+  font-size: 13px;
+  margin-top: 0;
 }
