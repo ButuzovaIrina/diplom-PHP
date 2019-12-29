@@ -21,6 +21,28 @@ foreach ($usersList["dataArray"] as $value) {
     $i++;    
   } 
 }  
+$taskFile = file_get_contents("../database/tasks.json"); 
+$taskList = json_decode($taskFile, TRUE); 
+$language = "";
+$editTask = [];
+$idText = $_GET["idtext"];
+
+foreach ($taskList ["dataArray"] as  $key => $value) {
+    if ($key === $idText) {
+        $editTask = $value; 
+    }
+}
+if ($editTask["status"] === "new") {
+    $status = "новое";
+} elseif ($editTask["status"] === "checking") {
+    $status = "на проверке";
+} elseif ($editTask["status"] === "rejected") {
+    $status = "отклоненно";
+} elseif ($editTask["status"] === "done") {
+    $status = "выполнено";
+}
+
+
 ?>
  
 <!DOCTYPE html>
@@ -52,13 +74,13 @@ foreach ($usersList["dataArray"] as $value) {
   <div class="content-wrapper">
     <div class="content">
       <a class="back task" href="/forms/mainForm.php">Назад</a>
-      <form action="../formActions/addTask.php" method="POST" class="new-task-form">
+      <form action="../formActions/editTask.php" method="POST" class="new-task-form">
       <div class="form-row">
         <label>
           <span>Переводчик:</span>
           <select name="translator">
-            <option value=" "></option>
-            <?php
+          <?=$editTask[$idText]["translator"];?>
+            <?php echo "<option value=" . '"' . $editTask["translator"] . "></option>";
                 foreach ($translators as $key => $value) {
                     echo '<option value="'. $value["login"].'">'.$value["name"].'</option>';    
                 }
@@ -68,8 +90,7 @@ foreach ($usersList["dataArray"] as $value) {
         <label>
           <span>Клиент:</span> 
           <select name="customer">
-            <option value=" "></option>
-              <?php
+            <?php echo "<option value=" . '"' . $editTask["customer"] . "></option>";
                   foreach ($customerList as $key => $value) {
                        echo '<option value="'. $key.'">'.$value.'</option>';    
                   }
@@ -81,9 +102,8 @@ foreach ($usersList["dataArray"] as $value) {
       <div class="form-row">
         <label>
         <span>Язык оригинала:</span>
-        <select name="language-origin">
-          <option value=" "></option>
-            <?php
+        <select name="language-origin" disabled>
+          <?php echo "<option value=" . '"' . $editTask["languageOrigin"] . "></option>";
                 foreach ($languageList as $key => $value) {
                     echo '<option value="'. $value["id"].'">'.$value["name"].'</option>';    
                 }
@@ -97,22 +117,25 @@ foreach ($usersList["dataArray"] as $value) {
         <span>Языки перевода:</span>
         </label>
         <label>  
-        <select class="lang-select" multiple="multiple" name="language-to-do[]" size="3">
-          <?php
-              foreach ($languageList as $key => $value) {
-                  echo '<option value="'. $value["id"].'">'.$value["name"].'</option>';    
+        <?php
+            foreach ($languageList as $key => $value) {
+                $mark = "";
+                if (in_array($value["id"], $editTask["languageToDo"])) { 
+                    $mark = "checked";
+                }
+                echo '<label><input type="checkbox" 
+                            name="language-to-do[]" 
+                            value="'. $value["id"].'" 
+                            ' . $mark . '>'.$value["name"] . "</label>";    
                }
           ?>
-        </select>
-        <p class="comment">
-          <br />Чтобы выбрать несколько значений, 
-          <br />используйте при кликах клавиши shift и ctrl.
-        </p> 
+        
         </label>
       </div>
       <div class="form-row">
         <label>
-          <textarea name="text" placeholder="Исходный текст"></textarea>
+            <?php echo '<textarea name="text" >' . $editTask["userText"] . "</textarea>";
+          ?>
         </label>
       </div>     
         
@@ -120,8 +143,23 @@ foreach ($usersList["dataArray"] as $value) {
         <div class="form-column">
           <label>
             <span>Срок выполнения задания</span>
-            <input type="date" name="deadline" required="">
+            <input type="date" name="deadline" value=<?php echo $editTask["deadline"];?>>
           </label>
+          <label>
+          <?php
+              $mark = "";
+              if ($editTask["status"] === "done") { $mark = "checked";}
+              echo '<input type="checkbox" name="status" value="done" ' . $mark . '>';          
+           ?>
+          <span>Выполнено</span>
+          <?php
+              $mark = "";
+              if ($editTask["status"] === "rejected") { $mark = "checked";}
+              echo '<input type="checkbox" name="status" value="rejected" ' . $mark . '>';          
+           ?>
+          <span>Отклонено</span>  
+          </label>
+          <input name="id" value=<?=$idText?>>
           <button type="submit">Сохранить</button>
         </div>
       </div>

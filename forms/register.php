@@ -1,5 +1,6 @@
 <?php
-$messege = "";
+    session_start();  
+/*$messege = "";
 $loginMatch = preg_match("/\W+/", $_POST["login"]);
 $mailMatch = preg_match("/[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}/", $_POST["email"]);
 $codeMatch = "aaa";
@@ -29,7 +30,7 @@ if (strlen($_POST["middleName"])  === 0) {
 if ($messege === ""){
    $messege = "Регистрация прошла успешно!";
 } 
-/**/
+*/
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -48,6 +49,9 @@ if ($messege === ""){
   </div>
   <div class="form-container">
     <h2 class="form-header">Регистрация </h2>
+    <?php   echo "<label><p>" . $_SESSION["messege"] . "</p></label>";
+    $_SESSION["messege"] = "";
+    ?>
     <label>
       <span>Логин:</span>
       <input type="text" name="login" placeholder="Логин">
@@ -85,9 +89,6 @@ if ($messege === ""){
     <button type="submit">Зарегистрироваться</button>
   </div>
 </form> 
-<?php
-  echo $messege;
-?>
 
 </body>
 </html>

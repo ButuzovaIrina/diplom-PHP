@@ -1,5 +1,9 @@
 <?php
-
+    session_start(); 
+    $messege = "";
+    if (isset($_SESSION["messege"])) {
+      $messege = $_SESSION["messege"];
+    }
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -18,6 +22,9 @@
   </div>
   <div class="form-container">
     <h2 class="form-header">Авторизация </h2>
+    <?php echo "<label><p>" . $messege . "</p></label>";
+    $_SESSION["messege"] = "";
+    ?>
     <label>
       <span>Логин:</span>
       <input type="text" name="login" placeholder="Логин">

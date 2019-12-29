@@ -17,6 +17,10 @@ session_start();
     $_SESSION["login"] = $newUser->login;
     $_SESSION["name"] = $newUser->firstName;
     $_SESSION["status"] = $newUser->status;
+    $_SESSION["firstName"] = $newUser->firstName;
+    $_SESSION["middleName"] = $newUser->middleName;
+    $_SESSION["lastName"] = $newUser->lastName;
+
 
 header("HTTP/1.1 200 OK");
-header("Location: ../forms/mainForm.php");
+header("Location: ../forms/mainForm.php?filter=all");

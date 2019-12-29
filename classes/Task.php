@@ -2,11 +2,10 @@
 class Task extends DataRecordModel
 {
     public $status;
+    public $translator;
     public $customer;
     public $languageOrigin;
     public $languageToDo;
-    public $userFile;
-    public $taskName;
     public $deadline;
      
     public function addTaskFromForm()

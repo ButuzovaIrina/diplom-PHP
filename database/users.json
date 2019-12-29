@@ -1,6 +1,6 @@
 {
     "dataTitle": {
-        "last_guid": 4
+        "last_guid": 6
     },
     "dataArray": {
         "o1": {
@@ -41,6 +41,26 @@
             "middleName": "\u041f\u0435\u0442\u0440\u043e\u0432\u0438\u0447",
             "email": "222@ggg.ru",
             "phone": "2222222222222",
+            "status": "translator"
+        },
+        "o5": {
+            "login": "22222222",
+            "password": "2222",
+            "lastName": "222",
+            "firstName": "222",
+            "middleName": "222",
+            "email": "222@ggg.ru",
+            "phone": "222222",
+            "status": "manager"
+        },
+        "o6": {
+            "login": "999999999999",
+            "password": "999999999999",
+            "lastName": "9999999999",
+            "firstName": "99999999999999",
+            "middleName": "9999999999",
+            "email": "99999999",
+            "phone": "99999999",
             "status": "translator"
         }
     }
