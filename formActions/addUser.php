@@ -2,7 +2,7 @@
 include ("../autoload.php");
 include ("../config/SystemConfig.php");
 
-$newUser = new User;
+$newUser = new User();
 $newUser->login = $_POST["login"];
 $newUser->password = $_POST["password"];
 $newUser->lastName = $_POST["lastName"];

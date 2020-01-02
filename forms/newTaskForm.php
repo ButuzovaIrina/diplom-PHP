@@ -60,7 +60,7 @@ foreach ($usersList["dataArray"] as $value) {
             <option value=" "></option>
             <?php
                 foreach ($translators as $key => $value) {
-                    echo '<option value="'. $value["login"].'">'.$value["name"].'</option>';    
+                    echo '<option value="' . $value["login"] . '">' . $value["name"]. '</option>';    
                 }
             ?>
           </select>
@@ -71,7 +71,7 @@ foreach ($usersList["dataArray"] as $value) {
             <option value=" "></option>
               <?php
                   foreach ($customerList as $key => $value) {
-                       echo '<option value="'. $key.'">'.$value.'</option>';    
+                       echo '<option value="' . $key . '">' . $value . '</option>';    
                   }
               ?>
           </select>
@@ -85,7 +85,7 @@ foreach ($usersList["dataArray"] as $value) {
           <option value=" "></option>
             <?php
                 foreach ($languageList as $key => $value) {
-                    echo '<option value="'. $value["id"].'">'.$value["name"].'</option>';    
+                    echo '<option value="' . $value["id"] .'">'.$value["name"] . '</option>';    
                 }
             ?>
         </select>
@@ -100,7 +100,7 @@ foreach ($usersList["dataArray"] as $value) {
         <select class="lang-select" multiple="multiple" name="language-to-do[]" size="3">
           <?php
               foreach ($languageList as $key => $value) {
-                  echo '<option value="'. $value["id"].'">'.$value["name"].'</option>';    
+                  echo '<option value="' . $value["id"].'">' . $value["name"] . '</option>';    
                }
           ?>
         </select>

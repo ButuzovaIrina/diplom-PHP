@@ -77,10 +77,9 @@ if ($editTask["status"] === "new") {
       <form action="../formActions/editTask.php" method="POST" class="new-task-form">
       <div class="form-row">
         <label>
-          <span>Переводчик:</span>
-          <select name="translator">
-          <?=$editTask[$idText]["translator"];?>
-            <?php echo "<option value=" . '"' . $editTask["translator"] . "></option>";
+          <span>Переводчик:</span>    
+          <select name="translator"      
+            <?php echo "option value=" . '"' . $editTask["translator"] . '"' . "></option>";
                 foreach ($translators as $key => $value) {
                     echo '<option value="'. $value["login"].'">'.$value["name"].'</option>';    
                 }
@@ -89,8 +88,8 @@ if ($editTask["status"] === "new") {
         </label>
         <label>
           <span>Клиент:</span> 
-          <select name="customer">
-            <?php echo "<option value=" . '"' . $editTask["customer"] . "></option>";
+          <select name="customer"
+            <?php echo "option value=" . '"' . $editTask["customer"] . '"' . "></option>";
                   foreach ($customerList as $key => $value) {
                        echo '<option value="'. $key.'">'.$value.'</option>';    
                   }
@@ -105,7 +104,9 @@ if ($editTask["status"] === "new") {
         <select name="language-origin" disabled>
           <?php echo "<option value=" . '"' . $editTask["languageOrigin"] . "></option>";
                 foreach ($languageList as $key => $value) {
-                    echo '<option value="'. $value["id"].'">'.$value["name"].'</option>';    
+                    if ($value["id"] === $editTask["languageOrigin"]){
+                        echo '<option value="'. $value["id"].'">'.$value["name"].'</option>'; 
+                    }   
                 }
             ?>
         </select>

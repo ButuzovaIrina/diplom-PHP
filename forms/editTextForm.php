@@ -67,14 +67,18 @@ if ($editTask["status"] === "new") {
           <p class="date">Исходный текст</p>
           <textarea><?php echo $editTask["userText"];?></textarea>
           
-          <?php  foreach ($editTask["languageToDo"] as $lang) {
-              $doneText = $editTask["translatedText"][$lang];
-              echo "<div class=" . '"content-head"' .">
-            <p class=" . '"date"' . ">Перевод</p>
-            <p class=". '"language"' . ">Язык: " . $lang . "</p> 
-          </div>  
-          <textarea name=" . '"text' . $lang . '">' . $doneText . "</textarea>";
-        } ?> 
+          <?php foreach ($editTask["languageToDo"] as $lang) {
+                    if (!isset($editTask["translatedText"][$lang])){
+                        $editTask["translatedText"][$lang] = "";
+                    }
+                    $doneText = $editTask["translatedText"][$lang];
+                    echo "<div class=" . '"content-head"' .">
+                    <p class=" . '"date"' . ">Перевод</p>
+                    <p class=". '"language"' . ">Язык: " . $lang . "</p> 
+                    </div>  
+                    <textarea name=" . '"text' . $lang . '">' . $doneText . "</textarea>";
+                } 
+          ?> 
           <input name="id" value=<?=$idText?>>
           <button class="edit-text" type="submit" name="btn" value="check">Отправить на проверку</button>
           <button class="edit-text" type="submit" name="btn" value="save">Сохранить</button>      

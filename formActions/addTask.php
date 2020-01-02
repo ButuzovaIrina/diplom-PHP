@@ -13,7 +13,7 @@ foreach ($_POST["language-to-do"] as $key => $value) {
    $i++;
 }
 
-$newTask = new Task;
+$newTask = new Task();
 
 $newTask->status = "new";
 $newTask->manager = $_SESSION["login"];
@@ -22,7 +22,7 @@ $newTask->customer = $_POST["customer"];
 $newTask->languageOrigin = $_POST["language-origin"];
 $newTask->languageToDo = $_POST["language-to-do"];
 $newTask->userText = $_POST["text"];
-$newTask->translatedText = $transTxt ; 
+$newTask->translatedText = $transTxt; 
 $newTask->deadline = $_POST["deadline"];
 
 $newTask->addTaskFromForm();

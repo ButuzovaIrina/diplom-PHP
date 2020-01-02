@@ -11,7 +11,8 @@ $taskList = json_decode($taskFile, TRUE);
 $taskList["dataArray"][ $_POST["id"]]["translator"] = $_POST["translator"];
 $taskList["dataArray"][ $_POST["id"]]["customer"] = $_POST["customer"];
 $taskList["dataArray"][ $_POST["id"]]["customer"] = $_POST["customer"];
-foreach ($taskList["dataArray"][ $_POST["id"]]["languageToDo"] as $key => $value) {
+//$taskList["dataArray"][$_POST["id"]]["languageToDo"] = [];
+foreach ($_POST["language-to-do"] as $key => $value) { 
     $taskList["dataArray"][$_POST["id"]]["languageToDo"][$key] = $_POST["language-to-do"][$key];
 }
 if (isset($_POST["status"])) {
@@ -21,7 +22,7 @@ if (isset($_POST["status"])) {
         $taskList["dataArray"][ $_POST["id"]]["status"] = "rejected";     
     }
 } else {
-    $taskList["dataArray"][ $_POST["id"]]["status"] = "checking"; 
+//    $taskList["dataArray"][ $_POST["id"]]["status"] = "checking"; 
 }
 $taskList["dataArray"][ $_POST["id"]]["deadline"] = $_POST["deadline"];
 
