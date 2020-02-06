@@ -1,36 +1,6 @@
 <?php
     session_start();  
-/*$messege = "";
-$loginMatch = preg_match("/\W+/", $_POST["login"]);
-$mailMatch = preg_match("/[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}/", $_POST["email"]);
-$codeMatch = "aaa";
 
-if ($loginMatch === 1){
-    $messege = $messege . "В логине не могут содержаться спецсимволы @/*?,;: <br>";
-} 
-if (strlen($_POST["password"]) < 8) {
-    $messege = $messege . "Пароль должен быть меньше 8 символов. <br> "; 
-}
-
-if ( $mailMatch !== 1) {
-    $messege =  $messege . "Адрес почты должен быть в формате почта@домен.доменнаязона .<br>";
-}
-
-if (strlen($_POST["firstName"]) === 0 ) {
-    $messege =  $messege . ("Поле 'Имя' не может быть пустым!   <br>");
-}
-if (strlen($_POST["lastName"])  === 0) {
-    $messege =  $messege . ("Полe 'Фамилия' не может быть пустым! <br>");
-}
- 
-if (strlen($_POST["middleName"])  === 0) {
-    $messege =  $messege . ("Поле 'Отчество' не может быть пустым!   <br>");
-}
-
-if ($messege === ""){
-   $messege = "Регистрация прошла успешно!";
-} 
-*/
 ?>
 <!DOCTYPE html>
 <html lang="ru">

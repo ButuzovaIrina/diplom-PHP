@@ -7,6 +7,10 @@ class Task extends DataRecordModel
     public $languageOrigin;
     public $languageToDo;
     public $deadline;
+    public $manager;
+    public $userText;
+    public $translatedText;
+
      
     public function addTaskFromForm()
     {

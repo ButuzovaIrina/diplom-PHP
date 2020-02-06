@@ -15,7 +15,7 @@ class DataRecordModel
     {
         $data = new JsonDataArray($this->filename);
         if (is_null($this->guid)){
-            $this->guid = $data->add($this);
+            $this->guid = $data->add($this);      
         } else {
             $data->changeObjByGuid($this->guid, $this);
         }

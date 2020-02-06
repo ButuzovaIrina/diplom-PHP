@@ -1,10 +1,13 @@
 <?php
-ini_set('error_reporting', E_ALL);
-ini_set('display_startup_errors', 1);
-ini_set('display_errors', 1);
 include ("../autoload.php");
 include ("../config/SystemConfig.php");
 session_start();
+
+if (!isset($_SESSION["login"])) {
+  $_SESSION["messege"] = "Вы не вошли. Войдите или зарегистрируйтесь, пожалуйста." ;
+  header("Location: ../index.php");
+}
+
 $language = file_get_contents("../database/language.json"); 
 $languageList = json_decode($language, TRUE); 
 $customer = file_get_contents("../database/customer.json");

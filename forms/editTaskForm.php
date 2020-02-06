@@ -1,10 +1,14 @@
 <?php
-ini_set('error_reporting', E_ALL);
-ini_set('display_startup_errors', 1);
-ini_set('display_errors', 1);
 include ("../autoload.php");
 include ("../config/SystemConfig.php");
+include ("../functions.php");
+
 session_start();
+if (!isset($_SESSION["login"])) {
+  $_SESSION["messege"] = "Вы не вошли. Войдите или зарегистрируйтесь, пожалуйста." ;
+  header("Location: ../index.php");
+}
+
 $language = file_get_contents("../database/language.json"); 
 $languageList = json_decode($language, TRUE); 
 $customer = file_get_contents("../database/customer.json");
@@ -32,19 +36,8 @@ foreach ($taskList ["dataArray"] as  $key => $value) {
         $editTask = $value; 
     }
 }
-if ($editTask["status"] === "new") {
-    $status = "новое";
-} elseif ($editTask["status"] === "checking") {
-    $status = "на проверке";
-} elseif ($editTask["status"] === "rejected") {
-    $status = "отклоненно";
-} elseif ($editTask["status"] === "done") {
-    $status = "выполнено";
-}
-
 
 ?>
- 
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -162,6 +155,14 @@ if ($editTask["status"] === "new") {
           </label>
           <input name="id" value=<?=$idText?>>
           <button type="submit">Сохранить</button>
+          <?php  foreach ($editTask["languageToDo"] as $lang) {
+              $doneText = $editTask["translatedText"][$lang ];
+              echo "<div class=" . '"content-head"' .">
+                <p class=" . '"date"' . ">Перевод</p>
+                <p class=". '"language"' . ">Язык: " . $lang . "</p> 
+              </div>  
+              <textarea name=" . '"text' . $lang . '">' . $doneText . "</textarea>";
+             } ?> 
         </div>
       </div>
       </form>

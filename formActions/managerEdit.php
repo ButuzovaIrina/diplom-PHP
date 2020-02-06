@@ -1,11 +1,8 @@
 <?php
-ini_set('error_reporting', E_ALL);
-ini_set('display_startup_errors', 1);
-ini_set('display_errors', 1); 
 include ("../autoload.php");
 include ("../config/SystemConfig.php");
 session_start();
-$oldname = $_POST["id"];
+
 $taskFile = file_get_contents("../database/tasks.json"); 
 $taskList = json_decode($taskFile, TRUE); 
 if ($_POST["status"] === "done") {//меняем статус 

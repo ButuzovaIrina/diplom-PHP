@@ -1,15 +1,15 @@
 {
     "dataTitle": {
-        "last_guid": 6
+        "last_guid": 2
     },
     "dataArray": {
         "o1": {
             "login": "12345",
             "password": "12345",
-            "lastName": "\u0418\u0432\u0430\u043d\u043e\u0432 ",
+            "lastName": "\u0418\u0432\u0430\u043d\u043e\u0432",
             "firstName": "\u0418\u0432\u0430\u043d",
             "middleName": "\u0418\u0432\u0430\u043d\u043e\u0432\u0438\u0447",
-            "email": "12345.mail.com",
+            "email": "12321.mail.com",
             "phone": "123456789",
             "status": "manager"
         },
@@ -19,48 +19,8 @@
             "lastName": "\u041f\u0435\u0442\u0440\u043e\u0432\u0430",
             "firstName": "\u0414\u0430\u0440\u044c\u044f",
             "middleName": "\u041f\u0435\u0442\u0440\u043e\u0432\u043d\u0430",
-            "email": "12321.mail.com",
-            "phone": "987654321",
-            "status": "translator"
-        },
-        "o3": {
-            "login": "11111",
-            "password": "11111",
-            "lastName": "\u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432",
-            "firstName": "\u041d\u0438\u043a\u043e\u043b\u0430\u0439",
-            "middleName": "\u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u0438\u0447",
-            "email": "11111.mail.com",
-            "phone": "111111",
-            "status": "translator"
-        },
-        "o4": {
-            "login": "22222",
-            "password": "22222",
-            "lastName": "\u041f\u0430\u0432\u043b\u043e\u0432",
-            "firstName": "\u041f\u0435\u0442\u0440",
-            "middleName": "\u041f\u0435\u0442\u0440\u043e\u0432\u0438\u0447",
             "email": "222@ggg.ru",
-            "phone": "2222222222222",
-            "status": "translator"
-        },
-        "o5": {
-            "login": "22222222",
-            "password": "2222",
-            "lastName": "222",
-            "firstName": "222",
-            "middleName": "222",
-            "email": "222@ggg.ru",
-            "phone": "222222",
-            "status": "manager"
-        },
-        "o6": {
-            "login": "999999999999",
-            "password": "999999999999",
-            "lastName": "9999999999",
-            "firstName": "99999999999999",
-            "middleName": "9999999999",
-            "email": "99999999",
-            "phone": "99999999",
+            "phone": "22222222222",
             "status": "translator"
         }
     }

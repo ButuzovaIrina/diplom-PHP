@@ -1,16 +1,14 @@
 <?php
 include ("../autoload.php");
 include ("../config/SystemConfig.php");
-ini_set('error_reporting', E_ALL);
-ini_set('display_startup_errors', 1);
-ini_set('display_errors', 1); 
+
 session_start();
 
 $transTxt = [];
 $i = 0;
 foreach ($_POST["language-to-do"] as $key => $value) {
-   $transTxt[$value] = "";
-   $i++;
+    $transTxt[$value] = "";
+    $i++;
 }
 
 $newTask = new Task();
@@ -25,7 +23,7 @@ $newTask->userText = $_POST["text"];
 $newTask->translatedText = $transTxt; 
 $newTask->deadline = $_POST["deadline"];
 
-$newTask->addTaskFromForm();
+$newTask->addTaskFromForm();  
 
 
 header("HTTP/1.1 200 OK");

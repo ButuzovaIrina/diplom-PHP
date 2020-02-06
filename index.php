@@ -1,13 +1,9 @@
 <?php
-ini_set('error_reporting', E_ALL);
-ini_set('display_startup_errors', 1);
-ini_set('display_errors', 1); 
-
 include "autoload.php";
 include "config/SystemConfig.php";
 $messege = null;
+session_start(); 
 ?>
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -27,6 +23,11 @@ $messege = null;
         <li class="menu-header">
           Авторизация
         </li>
+      <?php if (isset($_SESSION["messege"])) {
+        echo "<li class=" . '"menu-header"' . ">" . $_SESSION["messege"] ."</li>";
+        $_SESSION["messege"] = "";
+      }
+      ?>
         <li class="menu-item menu-item_login">
           <a class="sidebar-action" href="/forms/login.php">
             <span>Вход</span>

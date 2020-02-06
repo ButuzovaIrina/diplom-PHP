@@ -1,10 +1,12 @@
 <?php
-ini_set('error_reporting', E_ALL);
-ini_set('display_startup_errors', 1);
-ini_set('display_errors', 1);
 include ("../autoload.php");
 include ("../config/SystemConfig.php");
+include ("../functions.php");
 session_start();
+if (!isset($_SESSION["login"])) {
+  $_SESSION["messege"] = "Вы не вошли. Войдите или зарегистрируйтесь, пожалуйста." ;
+  header("Location: ../index.php");
+}
 $taskFile = file_get_contents("../database/tasks.json"); 
 $taskList = json_decode($taskFile, TRUE); 
 $language = "";
@@ -16,17 +18,8 @@ foreach ($taskList ["dataArray"] as  $key => $value) {
         $editTask = $value; 
     }
 }
-if ($editTask["status"] === "new") {
-    $status = "новое";
-} elseif ($editTask["status"] === "checking") {
-    $status = "на проверке";
-} elseif ($editTask["status"] === "rejected") {
-    $status = "отклоненно";
-} elseif ($editTask["status"] === "done") {
-    $status = "выполнено";
-}
+
 ?>
- 
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -61,7 +54,7 @@ if ($editTask["status"] === "new") {
               <?php echo " " . date("d.m.Y", strtotime($editTask["deadline"])); ?> 
             </p>
             <p class="status">Статус: 
-              <?php echo " " . $status; ?>
+              <?php echo " " . status($editTask["status"]); ?>
             </p>
           </div>
           <p class="date">Исходный текст</p>

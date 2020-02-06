@@ -1,10 +1,15 @@
 <?php
-ini_set('error_reporting', E_ALL);
-ini_set('display_startup_errors', 1);
-ini_set('display_errors', 1); 
 include ("../autoload.php");
 include ("../config/SystemConfig.php");
+include ("../functions.php");
+
 session_start();
+if (!isset($_SESSION["login"])) {
+  $_SESSION["messege"] = "Вы не вошли. Войдите или зарегистрируйтесь, пожалуйста." ;
+  header("Location: ../index.php");
+}
+
+
 $i = 0;
 $tasksAll = [];
 //$tasksAll[$i]["language"] = [];
@@ -31,16 +36,6 @@ foreach ($taskList["dataArray"] as $key => $value) {
 foreach ($tasksAll as $task) {
     if ($task["status"] === $_GET["filter"] || $_GET["filter"] === "all"){
         $tasks[$i] = $task;
-        if ($task["status"] === "new") {
-            $status = "новое";
-        } elseif ($task["status"] === "checking") {
-            $status = "на проверке";
-        } elseif ($task["status"] === "rejected") {
-            $status = "отклоненно";
-        } elseif ($task["status"] === "done") {
-            $status = "выполнено";
-        }
-        $tasks[$i]["statusShow"] = $status;
         $i++;
     }
 }
@@ -61,7 +56,7 @@ foreach ($tasksAll as $task) {
   </div>  
   <section class="sidebar">
     <div class="menu-header">
-      <a class="back" href="../index.php">Назад</a>       
+      <a class="back" href="../index.php">Выход</a>       
         <p>Привет,  <?=$_SESSION["firstName"];?></p>
     </div>
     <div class="menu-header"><?php if ($_SESSION["status"] === "translator") {
@@ -107,7 +102,7 @@ foreach ($tasksAll as $task) {
               echo '</a>';
               }?>
     </div>
-  </section>
+  </section> 
   <div class="content-wrapper">
     <?php if ($_SESSION["status"] === "translator") {
               foreach ($tasks as $key => $value) {  
@@ -117,7 +112,7 @@ foreach ($tasksAll as $task) {
                             "<p class=" . '"date"' . ">Срок выполнения перевода: " . 
                               date("d.m.Y", strtotime($value["deadline"])) . "</p>" .
                             "<p class=" . '"status"' . ">Статус: " . 
-                            $value["statusShow"] . "</p>" .
+                            status($value["status"]) . "</p>" .  
                           '</div>'.
                             '<textarea>' . $value["userText"]. '
                             </textarea>
@@ -135,7 +130,7 @@ foreach ($tasksAll as $task) {
                             "<p class=" . '"date"' . ">Срок выполнения перевода: " . 
                             date("d.m.Y", strtotime($value["deadline"])) . "</p>" .
                             "<p class=" . '"status"' . ">Статус: " . 
-                             $value["statusShow"] . "</p>" .
+                              status($value["status"]) . "</p>" .
                           '</div>'.
                         '<textarea>' . $value["userText"] .'
                         </textarea>
