@@ -1,4 +1,5 @@
 <?php
+
 include ("../autoload.php");
 include ("../config/SystemConfig.php");
 session_start();

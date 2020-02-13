@@ -1,4 +1,5 @@
 <?php
+
 class JsonFileAccessModel extends FileAccessModel
 {   
     function __construct($filename) 

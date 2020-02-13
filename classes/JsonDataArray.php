@@ -28,7 +28,7 @@ class JsonDataArray
     }
 
     public function load()
-    {
+    {       
         $this->dataTitle = $this->file->readJson()->dataTitle;
         $this->dataArray = (array)$this->file->readJson()->dataArray;
         $this->newQuery();

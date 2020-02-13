@@ -11,6 +11,8 @@ foreach ($_POST["language-to-do"] as $key => $value) {
     $i++;
 }
 
+
+
 $newTask = new Task();
 
 $newTask->status = "new";
@@ -23,7 +25,9 @@ $newTask->userText = $_POST["text"];
 $newTask->translatedText = $transTxt; 
 $newTask->deadline = $_POST["deadline"];
 
+
 $newTask->addTaskFromForm();  
+
 
 
 header("HTTP/1.1 200 OK");

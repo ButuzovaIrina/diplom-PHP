@@ -11,7 +11,9 @@ class FileAccessModel extends Config
 
     protected function connect($mode)
     {
+
         $this->file = fopen($this->filename, $mode);
+    
     }
 
     protected function disconnect() 
@@ -22,7 +24,8 @@ class FileAccessModel extends Config
     public function read() 
     {
         $this->connect("r+");
-        $text = fread($this->file, 5000);
+        $length = filesize($this->filename);
+        $text = fread($this->file, $length); 
         $this->disconnect();
         return $text;
     }

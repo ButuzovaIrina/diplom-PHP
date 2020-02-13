@@ -1,4 +1,7 @@
 <?php
+error_reporting(-1);
+ini_set('error_reporting', E_ALL);
+
 include ("../autoload.php");
 include ("../config/SystemConfig.php");
 include ("../functions.php");
@@ -12,7 +15,6 @@ if (!isset($_SESSION["login"])) {
 
 $i = 0;
 $tasksAll = [];
-//$tasksAll[$i]["language"] = [];
 $tasks = [];
 if (!isset($_GET["filter"])) {
   $_GET["filter"] = "all";
