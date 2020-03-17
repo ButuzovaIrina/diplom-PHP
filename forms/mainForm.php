@@ -144,7 +144,7 @@ foreach ($tasksAll as $task) {
                       }
             
                       echo '<a class='.'"edit"'.' href=' . '"../forms/editTaskForm.php?idtext=' . $idText . '">Редактировать</a>'.
-                        '<a class='.'"delete"'.' href=' . '"../formActions/managerDelete.php?idtext=' . $idText . '">Удалить</a>'.
+                        '<a class='.'"delete"'.' href=' . '"../formActions/deleteTask.php?idtext=' . $idText . '">Удалить</a>'.
                         
                        '</div>';
               }

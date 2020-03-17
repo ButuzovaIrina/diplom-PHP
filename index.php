@@ -29,12 +29,12 @@ session_start();
       }
       ?>
         <li class="menu-item menu-item_login">
-          <a class="sidebar-action" href="/forms/login.php">
+          <a class="sidebar-action" href="/forms/loginForm.php">
             <span>Вход</span>
           </a>
         </li>
         <li class="menu-item menu-item_register">
-          <a class="sidebar-action" href="/forms/register.php">
+          <a class="sidebar-action" href="/forms/registerForm.php">
             <span>Регистрация</span>
           </a>
         </li>

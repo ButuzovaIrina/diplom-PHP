@@ -49,7 +49,7 @@ foreach ($taskList ["dataArray"] as  $key => $value) {
   <div class="content-wrapper">
     <div class="content">
       <a class="back task" href="/forms/mainForm.php">Назад</a>
-      <form action="../formActions/managerEdit.php" method="POST" class="new-task-form">
+      <form action="../formActions/managerEditTask.php" method="POST" class="new-task-form">
         <div class="content-head">
           <p class="date">Срок выполнения перевода: 
               <?php echo " " . date("d.m.Y", strtotime($editTask["deadline"])); ?> 
