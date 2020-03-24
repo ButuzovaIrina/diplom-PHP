@@ -1,4 +1,7 @@
 <?php
+/**
+ * форма редактирования заданий менеджером
+ */
 include ("../autoload.php");
 include ("../config/SystemConfig.php");
 include ("../functions.php");

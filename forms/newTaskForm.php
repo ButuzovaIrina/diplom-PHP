@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * форма для заполнения нового задания
+ * доступна менеджеру
+ */
 include ("../autoload.php");
 include ("../config/SystemConfig.php");
 session_start();

@@ -1,5 +1,8 @@
 <?php
-    session_start(); 
+/**
+ * форма входа в систему
+ */
+//    session_start(); 
     $messege = "";
     if (isset($_SESSION["messege"])) {
       $messege = $_SESSION["messege"];

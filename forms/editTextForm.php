@@ -1,4 +1,7 @@
 <?php
+/**
+ * форма для редактирования текста переводчиком
+ */
 include ("../autoload.php");
 include ("../config/SystemConfig.php");
 include ("../functions.php");

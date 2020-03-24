@@ -1,7 +1,11 @@
 <?php
+/**
+ * выполнение формы редакторования задания менеджером
+ * изменение статуса задания
+ */
 include ("../autoload.php");
 include ("../config/SystemConfig.php");
-session_start();
+//session_start();
 
 $taskFile = file_get_contents("../database/tasks.json"); 
 $taskList = json_decode($taskFile, TRUE); 

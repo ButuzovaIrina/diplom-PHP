@@ -1,4 +1,8 @@
 <?php
+/**
+ * обработка результатов выполнения формы входа в систему
+ * проверка логина и пароля
+ */
 include ("../autoload.php");
 include ("../config/SystemConfig.php");
 

@@ -1,4 +1,7 @@
 <?php
+/**
+ * добавление новой задачи менеджером
+ */
 include ("../autoload.php");
 include ("../config/SystemConfig.php");
 
@@ -6,7 +9,8 @@ session_start();
 
 $transTxt = [];
 $i = 0;
-foreach ($_POST["language-to-do"] as $key => $value) {
+$languageToDo = $_POST["language-to-do"];
+foreach ($languageToDo as $key => $value) {
     $transTxt[$value] = "";
     $i++;
 }

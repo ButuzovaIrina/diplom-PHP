@@ -1,4 +1,7 @@
 <?php
+/**
+ * форма для редактирования заданий менеджером
+ */
 include ("../autoload.php");
 include ("../config/SystemConfig.php");
 include ("../functions.php");
@@ -31,7 +34,7 @@ $language = "";
 $editTask = [];
 $idText = $_GET["idtext"];
 
-foreach ($taskList ["dataArray"] as  $key => $value) {
+foreach ($taskList ["dataArray"] as $key => $value) {
     if ($key === $idText) {
         $editTask = $value; 
     }

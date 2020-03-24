@@ -1,8 +1,10 @@
 <?php 
 include ("../autoload.php");
 
+/**
+* возвращает статус задания на русском
+*/
 
-/*возвращает статус задания на русском*/
 function status($status) {
     if ($status === "new") {
         return "новое";

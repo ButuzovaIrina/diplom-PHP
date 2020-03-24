@@ -1,8 +1,11 @@
 <?php
+/**
+ * удаление задания менеджером
+ */
 include ("../autoload.php");
 include ("../config/SystemConfig.php");
 
-session_start();
+//session_start();
 
 $nameDelete = $_GET["idtext"];
 $taskFile = file_get_contents("../database/tasks.json"); 

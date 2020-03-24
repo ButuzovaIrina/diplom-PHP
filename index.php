@@ -2,7 +2,7 @@
 include "autoload.php";
 include "config/SystemConfig.php";
 $messege = null;
-session_start(); 
+//session_start(); 
 ?>
 <!DOCTYPE html>
 <html lang="ru">

@@ -1,4 +1,7 @@
 <?php
+/**
+ * добавление нового пользователя
+ */
 include ("../autoload.php");
 include ("../config/SystemConfig.php");
 

@@ -1,6 +1,6 @@
 {
     "dataTitle": {
-        "last_guid": 2
+        "last_guid": 3
     },
     "dataArray": {
         "o1": {
@@ -22,6 +22,16 @@
             "email": "222@ggg.ru",
             "phone": "22222222222",
             "status": "translator"
+        },
+        "o3": {
+            "login": "55555555555",
+            "password": "555555555555",
+            "lastName": "2222222222222",
+            "firstName": "22222222222",
+            "middleName": "22222222222",
+            "email": "2222222222200",
+            "phone": "555555555555555555",
+            "status": "manager"
         }
     }
 }
